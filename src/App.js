@@ -5,7 +5,7 @@ import img3 from "./imgs/3.jpeg";
 import img4 from "./imgs/4.jpeg";
 import img5 from "./imgs/5.jpeg";
 
-const day = window.location.href.split("/").slice(-1)[0];
+const day = window.location.href.split("/").slice(-1)[0] - 1;
 const answers = ["24752639", "88326016", "20111542", "100355140", "238797120000"];
 const imgs = [img1, img2, img3, img4, img5];
 
@@ -30,7 +30,7 @@ export default function App() {
 			<input type="text" onChange={({ target }) => setAns(target.value)} placeholder="קוד סודי" />
 			<button
 				onClick={() => {
-					if (ans == answers[day - 1]) setmsg("כל הכבוד תותח");
+					if (ans == answers[day]) setmsg("כל הכבוד תותח");
 					else setmsg("אויש טעות");
 					console.log(ans, answers[day]);
 				}}
