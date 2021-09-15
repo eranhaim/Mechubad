@@ -14,7 +14,6 @@ export default function App() {
 	const [msg, setmsg] = useState("");
 
 	useEffect(() => {
-		console.log("fuck this stupid shit");
 		document.querySelector("html").style.backgroundImage = `url(${imgs[day]})`;
 	}, []);
 	return (
