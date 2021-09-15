@@ -14,6 +14,7 @@ export default function App() {
 	const [msg, setmsg] = useState("");
 
 	useEffect(() => {
+		console.log("fuck this stupid shit");
 		document.querySelector("html").style.backgroundImage = `url(${imgs[day]})`;
 	}, []);
 	return (
@@ -27,7 +28,6 @@ export default function App() {
 				paddingTop: 20,
 			}}
 		>
-			{/* <img style={{ top: 0, left: 0, height: "100vh", width: "100vw", position: "fixed" }} src={img} /> */}
 			<input type="text" onChange={({ target }) => setAns(target.value)} placeholder="קוד סודי" />
 			<button
 				onClick={() => {
