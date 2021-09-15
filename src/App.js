@@ -38,7 +38,7 @@ export default function App() {
 				GO
 			</button>
 
-			<h1 style={{ color: "white" }}>{msg}</h1>
+			<h1 style={{ color: "white", textShadow: "0 0 10px black" }}>{msg}</h1>
 		</div>
 	);
 }
