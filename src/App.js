@@ -30,9 +30,8 @@ export default function App() {
 			<input type="text" onChange={({ target }) => setAns(target.value)} placeholder="קוד סודי" />
 			<button
 				onClick={() => {
-					if (ans == answers[day]) setmsg("כל הכבוד תותח");
+					if (ans === answers[day]) setmsg("כל הכבוד תותח");
 					else setmsg("אויש טעות");
-					console.log(ans, answers[day]);
 				}}
 			>
 				GO
